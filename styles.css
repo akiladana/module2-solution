@@ -1,0 +1,67 @@
+h2{
+    text-align: center;
+}
+
+div{
+    margin-top: 70px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+#chicken, #beef, #sushi{
+    /*width: 32%;*/
+    height: auto;
+    background-color:rgb(186, 160, 127);
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.chickenT, .beefT, .sushiT{
+    float: right;
+    width: 33%;
+    text-align: center;
+    border: 1px solid black;
+    padding: 3px;
+    margin: 0px;
+    background-color: aqua;
+}
+
+div > p{
+    margin: 50px 10px 10px 10px;
+    clear: right;
+    
+}
+
+@media (min-width :992px){
+    #chicken, #beef, #sushi{
+        float: left;
+        margin-left: 10px;
+    }
+    #chicken{
+        width: 32%;
+    }
+    #beef{
+        width: 32%;
+    }
+    #sushi{
+        width: 32%;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+    #chicken, #beef, #sushi{
+        margin-left: 10px;
+        float: left;
+    }
+    #chicken{
+        width: 45%;
+    }
+    #beef{
+        width: 45%;
+    }
+    #sushi{
+        width: 90%;
+        
+    }
+}
